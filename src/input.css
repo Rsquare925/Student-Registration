@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+section{
+    box-shadow: 0px 0px 10px rgba(148, 97, 97, 0.4);
+}
+
+form label{
+    @apply font-bold;
+}
+
+form input{
+    @apply px-2 py-1 w-[90%];
+}
+
+form div.error::after{
+    content: var(--after-content);
+    @apply text-red-500 ;
+}
+
+div.error > input {
+    border: 1px solid red;
+}
+
+form > div{
+    @apply flex flex-col w-[100%];
+}
+
+table th{
+    @apply mx-2 border-black;
+}
+
+.btn {
+    @apply bg-[#F3D0D7] w-[30%] font-extrabold;
+}
+
+th, td {
+    border: 1px solid black; 
+    @apply p-2 text-center min-w-fit;
+}
+
+.edit,
+.delete{
+    @apply bg-[#F3D0D7] p-2 font-extrabold; 
+}
+
+.edit:hover,
+.delete:hover,
+.btn:hover{
+    @apply bg-[#daa9b3]; 
+}
+

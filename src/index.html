@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <title>Student Registration</title>
+    <script src="script.js" defer></script>
+
+</head>
+<body class="bg-[#F6F5F2]">
+    <h1 class="font-extrabold text-[2em] text-center p-4">Student Registration System</h1>
+    <div class="max-w-[1100px] mx-auto flex flex-col flex-wrap sm:flex-row mt-[5rem]">
+        <section class="bg-[#f0ebe3e0] w-[90%] mx-auto sm:w-[30%] ">
+            <form action="" class="flex flex-col flex-wrap items-center sm:items-start p-4 gap-4" id="form">
+                <div class="">
+                    <label for="student-name">Student Name:</label>
+                    <input type="text" id="student-name" name="student-name" required>
+                </div>
+                <div class="">
+                    <label for="student-id">Student Id:</label>
+                    <input type="number" id="student-id" name="student-id" required>
+                </div>
+                <div class="">
+                    <label for="student-email">Student Email:</label>
+                    <input type="email" id="student-email" name="student-email" required>
+                </div>
+                <div class="">
+                    <label for="student-contact">Contact Number:</label>
+                    <input type="number" id="student-contact" name="student-contact" required>
+                </div>
+                <input type="submit" value="Add" id="add" class="btn">
+                <button type="button" class="btn hidden p-2" id="save">Save</button>
+            </form>
+        </section>
+        <section class="mx-auto bg-[#f0ebe3e0] p-4 max-h-[350px] overflow-y-scroll">
+            <table id="table" class="overflow-y-scroll">
+                <tr>
+                    <th>Student Name</th>
+                    <th>Student ID</th>
+                    <th>Student Email</th>
+                    <th>Student Contact</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </table>
+        </section>
+    </div>
+</body>
+</html>
