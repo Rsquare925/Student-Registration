@@ -1,1 +1,1 @@
-# Rsquare
+# Student Registration 
